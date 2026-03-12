@@ -19,7 +19,6 @@
 
 ## Пример результата
 
-```csv
 title,url,summary
 Local AI Assistant: Installing OpenClaw with Ollama in 2 Steps,https://example.com/article1,N/A
 How Modern Databases Work,https://example.com/article2,This article explains how modern databases handle data...

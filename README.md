@@ -1,44 +1,44 @@
-# Простой Web Scraper
+# Simple Web Scraper
 
-Небольшой скрипт на Python для парсинга веб-страниц. Он извлекает заголовки статей, ссылки и краткое описание (если доступно) со страницы и сохраняет результат в CSV файл.
+A small Python script for parsing web pages. It extracts article titles, links, and brief descriptions (if available) from a page and saves the results to a CSV file.
 
-Скрипт пытается автоматически определить статьи, анализируя распространённую HTML-структуру (`article`, `h1`, `h2`, `h3`).
-
----
-
-## Возможности
-
-- извлечение заголовков статей
-- сбор ссылок на страницы
-- попытка извлечения краткого описания (summary)
-- фильтрация невалидных ссылок (`login`, `mailto`, `javascript` и др.)
-- сохранение результатов в CSV
-- работа с большинством сайтов с блогами или новостями
+The script automatically tries to identify articles by analyzing common HTML structures (`article`, `h1`, `h2`, `h3`).
 
 ---
 
-## Пример результата
+## Features
+
+- Extraction of article titles
+- Collection of page links
+- Attempt to extract brief descriptions (summary)
+- Filtering of invalid links (`login`, `mailto`, `javascript`, etc.)
+- Saving results to CSV
+- Works with most blogs and news websites
+
+---
+
+## Example Result
 
 title,url,summary
 Local AI Assistant: Installing OpenClaw with Ollama in 2 Steps,https://example.com/article1,N/A
 How Modern Databases Work,https://example.com/article2,This article explains how modern databases handle data...
 Building a CLI Tool in Python,https://example.com/article3,N/A
 
-## Установка
+## Installation
 
-Установите необходимые зависимости:
+Install the required dependencies:
 
 pip install requests beautifulsoup4
 
 
-## Использование
+## Usage
 
-Запустите скрипт и передайте URL страницы:
+Run the script and pass the page URL:
 
-python webscraper.py https://вашсайт.com
+python webscraper.py https://yoursite.com
 
-После выполнения появится файл вашеимя.csv с результатами.
+After execution, a file yourname.csv will appear with the results.
 
-## Лицензия
+## License
 
-Этот проект распространяется под лицензией MIT. См. файл LICENSE для подробностей.
+This project is distributed under the MIT License. See the LICENSE file for details.

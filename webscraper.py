@@ -34,7 +34,7 @@ def is_valid_link(link: str):
 
 
 def extract_summary(container):
-    # пытаемся найти краткое описание рядом со статьей
+    # trying to find a brief description next to the article
     p = container.find("p")
 
     if p:

@@ -89,7 +89,7 @@ def extract_items(html: str, base_url: str):
     return items
 
 
-def save_csv(data, filename="linux.csv"):
+def save_csv(data, filename="changeifneedeed.csv"):
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
